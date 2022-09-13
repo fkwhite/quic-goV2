@@ -143,8 +143,8 @@ type sealingManager interface {
 type frameSource interface {
 	HasData() bool
 	SchedulerProposalQueuing([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount) //CRIS
-	SchedulerWFQ([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount) //CRIS
-	SchedulerFairQueuing([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount) //CRIS
+	SchedulerWFQ([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount)             //CRIS
+	SchedulerFairQueuing([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount)     //CRIS
 	AppendStreamFrames([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount)
 	AppendControlFrames([]ackhandler.Frame, protocol.ByteCount) ([]ackhandler.Frame, protocol.ByteCount)
 	// AdvancedOutgoingStreamManagement defines extra methods to better control outgoing streams
@@ -651,8 +651,19 @@ func (p *packetPacker) composeNextPacket(maxFrameSize protocol.ByteCount, ackAll
 		payload.frames, lengthAdded = p.framer.AppendControlFrames(payload.frames, maxFrameSize-payload.length)
 		payload.length += lengthAdded
 
-		payload.frames, lengthAdded = p.framer.SchedulerProposalQueuing(payload.frames, maxFrameSize-payload.length) 
-		//AppendStreamFrames     //SchedulerFairQueuing       //SchedulerWFQ     //SchedulerProposalQueuing
+		AppendStreamFrames_Scheduler := "Proposal"
+		switch AppendStreamFrames_Scheduler {
+		case "RR":
+			payload.frames, lengthAdded = p.framer.AppendStreamFrames(payload.frames, maxFrameSize-payload.length)
+		case "FQ":
+			payload.frames, lengthAdded = p.framer.SchedulerFairQueuing(payload.frames, maxFrameSize-payload.length)
+		case "WFQ":
+			payload.frames, lengthAdded = p.framer.SchedulerWFQ(payload.frames, maxFrameSize-payload.length)
+		case "Proposal":
+			payload.frames, lengthAdded = p.framer.SchedulerProposalQueuing(payload.frames, maxFrameSize-payload.length)
+		}
+		// payload.frames, lengthAdded = p.framer.AppendStreamFrames(payload.frames, maxFrameSize-payload.length)
+		// //AppendStreamFrames     //SchedulerFairQueuing       //SchedulerWFQ     //SchedulerProposalQueuing
 		payload.length += lengthAdded
 	}
 	return payload
