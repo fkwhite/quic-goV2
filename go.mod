@@ -10,6 +10,7 @@ require (
 	github.com/marten-seemann/qtls-go1-16 v0.1.5
 	github.com/marten-seemann/qtls-go1-17 v0.1.2
 	github.com/marten-seemann/qtls-go1-18 v0.1.2
+	github.com/marten-seemann/qtls-go1-19 v0.1.0
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.20.2
 	golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90
