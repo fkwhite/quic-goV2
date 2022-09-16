@@ -15,11 +15,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lucas-clemente/quic-go"
-	"github.com/lucas-clemente/quic-go/internal/handshake"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/quicvarint"
+	"github.com/fkwhite/quic-go"
+	"github.com/fkwhite/quic-go/internal/handshake"
+	"github.com/fkwhite/quic-go/internal/protocol"
+	"github.com/fkwhite/quic-go/internal/utils"
+	"github.com/fkwhite/quic-go/quicvarint"
 	"github.com/marten-seemann/qpack"
 )
 

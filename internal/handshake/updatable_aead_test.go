@@ -8,10 +8,10 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	mocklogging "github.com/lucas-clemente/quic-go/internal/mocks/logging"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/qerr"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	mocklogging "github.com/fkwhite/quic-go/internal/mocks/logging"
+	"github.com/fkwhite/quic-go/internal/protocol"
+	"github.com/fkwhite/quic-go/internal/qerr"
+	"github.com/fkwhite/quic-go/internal/utils"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

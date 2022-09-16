@@ -8,11 +8,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/lucas-clemente/quic-go/fuzzing/internal/helper"
-	"github.com/lucas-clemente/quic-go/fuzzing/transportparameters"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
+	"github.com/fkwhite/quic-go/fuzzing/internal/helper"
+	"github.com/fkwhite/quic-go/fuzzing/transportparameters"
+	"github.com/fkwhite/quic-go/internal/protocol"
 
-	"github.com/lucas-clemente/quic-go/internal/wire"
+	"github.com/fkwhite/quic-go/internal/wire"
 )
 
 func getRandomData(l int) []byte {
