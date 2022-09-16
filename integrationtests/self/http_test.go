@@ -14,10 +14,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/fkwhite/quic-go"
-	"github.com/fkwhite/quic-go/http3"
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/testdata"
+	"github.com/fkwhite/quic-goV2.0"
+	"github.com/fkwhite/quic-goV2.0/http3"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/testdata"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

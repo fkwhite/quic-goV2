@@ -6,8 +6,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/logging"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/logging"
 )
 
 var (

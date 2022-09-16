@@ -5,8 +5,8 @@ import (
 	"crypto/rand"
 	"errors"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
 )
 
 // ParseVersionNegotiationPacket parses a Version Negotiation packet.

@@ -7,14 +7,14 @@ import (
 	"net"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/ackhandler"
-	"github.com/fkwhite/quic-go/internal/handshake"
-	"github.com/fkwhite/quic-go/internal/mocks"
-	mockackhandler "github.com/fkwhite/quic-go/internal/mocks/ackhandler"
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/qerr"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/internal/ackhandler"
+	"github.com/fkwhite/quic-goV2.0/internal/handshake"
+	"github.com/fkwhite/quic-goV2.0/internal/mocks"
+	mockackhandler "github.com/fkwhite/quic-goV2.0/internal/mocks/ackhandler"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/qerr"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
 
 	"github.com/golang/mock/gomock"
 

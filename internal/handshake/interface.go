@@ -6,9 +6,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/qtls"
-	"github.com/fkwhite/quic-go/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/qtls"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
 )
 
 var (

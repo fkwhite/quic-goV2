@@ -11,11 +11,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/fkwhite/quic-go"
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/logging"
-	"github.com/fkwhite/quic-go/qlog"
+	"github.com/fkwhite/quic-goV2.0"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/logging"
+	"github.com/fkwhite/quic-goV2.0/qlog"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

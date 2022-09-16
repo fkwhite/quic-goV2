@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/flowcontrol"
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/qerr"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/internal/flowcontrol"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/qerr"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
 )
 
 type receiveStreamI interface {

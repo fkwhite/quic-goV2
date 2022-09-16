@@ -13,15 +13,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/ackhandler"
-	"github.com/fkwhite/quic-go/internal/flowcontrol"
-	"github.com/fkwhite/quic-go/internal/handshake"
-	"github.com/fkwhite/quic-go/internal/logutils"
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/qerr"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/internal/wire"
-	"github.com/fkwhite/quic-go/logging"
+	"github.com/fkwhite/quic-goV2.0/internal/ackhandler"
+	"github.com/fkwhite/quic-goV2.0/internal/flowcontrol"
+	"github.com/fkwhite/quic-goV2.0/internal/handshake"
+	"github.com/fkwhite/quic-goV2.0/internal/logutils"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/qerr"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/logging"
 )
 
 type unpacker interface {
@@ -1838,7 +1838,7 @@ func (s *session) logPacketContents(p *packetContents) {
 		s.tracer.SentPacket(p.header, p.length, p.ack, frames)
 	}
 
-	// quic-go logging
+	// quic-goV2.0 logging
 	if !s.logger.Debug() {
 		return
 	}

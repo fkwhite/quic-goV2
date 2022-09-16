@@ -14,11 +14,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fkwhite/quic-go/fuzzing/internal/helper"
-	"github.com/fkwhite/quic-go/internal/handshake"
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/fuzzing/internal/helper"
+	"github.com/fkwhite/quic-goV2.0/internal/handshake"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
 )
 
 var (

@@ -9,7 +9,7 @@ import (
 	time "time"
 
 	gomock "github.com/golang/mock/gomock"
-	wire "github.com/fkwhite/quic-go/internal/wire"
+	wire "github.com/fkwhite/quic-goV2.0/internal/wire"
 )
 
 // MockUnpacker is a mock of Unpacker interface.

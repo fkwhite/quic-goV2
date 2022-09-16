@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/internal/wire"
-	"github.com/fkwhite/quic-go/logging"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/logging"
 )
 
 type zeroRTTQueue struct {
@@ -122,7 +122,7 @@ func newPacketHandlerMap(
 ) (packetHandlerManager, error) {
 	if err := setReceiveBuffer(c, logger); err != nil {
 		receiveBufferWarningOnce.Do(func() {
-			log.Printf("%s. See https://github.com/fkwhite/quic-go/wiki/UDP-Receive-Buffer-Size for details.", err)
+			log.Printf("%s. See https://github.com/fkwhite/quic-goV2.0/wiki/UDP-Receive-Buffer-Size for details.", err)
 		})
 	}
 	conn, err := wrapConn(c)

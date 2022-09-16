@@ -3,7 +3,7 @@ package wire
 import (
 	"bytes"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
 )
 
 // A HandshakeDoneFrame is a HANDSHAKE_DONE frame

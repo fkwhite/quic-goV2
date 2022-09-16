@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fkwhite/quic-go"
-	"github.com/fkwhite/quic-go/internal/utils"
+	"github.com/fkwhite/quic-goV2.0"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
 	"github.com/marten-seemann/qpack"
 )
 

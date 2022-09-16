@@ -7,9 +7,9 @@ import (
 	"net"
 	"time"
 
-	quic "github.com/fkwhite/quic-go"
-	quicproxy "github.com/fkwhite/quic-go/integrationtests/tools/proxy"
-	"github.com/fkwhite/quic-go/internal/protocol"
+	quic "github.com/fkwhite/quic-goV2.0"
+	quicproxy "github.com/fkwhite/quic-goV2.0/integrationtests/tools/proxy"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

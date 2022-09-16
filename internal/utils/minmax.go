@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
 )
 
 // InfDuration is a duration of infinite length

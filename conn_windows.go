@@ -9,7 +9,7 @@ import (
 	"net"
 	"syscall"
 
-	"github.com/fkwhite/quic-go/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
 	"golang.org/x/sys/windows"
 )
 

@@ -11,17 +11,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/utils"
-	"github.com/fkwhite/quic-go/internal/wire"
-	"github.com/fkwhite/quic-go/logging"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2.0/logging"
 
 	"github.com/francoispqt/gojay"
 )
 
-// Setting of this only works when quic-go is used as a library.
+// Setting of this only works when quic-goV2.0 is used as a library.
 // When building a binary from this repository, the version can be set using the following go build flag:
-// -ldflags="-X github.com/fkwhite/quic-go/qlog.quicGoVersion=foobar"
+// -ldflags="-X github.com/fkwhite/quic-goV2.0/qlog.quicGoVersion=foobar"
 var quicGoVersion = "(devel)"
 
 func init() {
@@ -29,11 +29,11 @@ func init() {
 		return
 	}
 	info, ok := debug.ReadBuildInfo()
-	if !ok { // no build info available. This happens when quic-go is not used as a library.
+	if !ok { // no build info available. This happens when quic-goV2.0 is not used as a library.
 		return
 	}
 	for _, d := range info.Deps {
-		if d.Path == "github.com/fkwhite/quic-go" {
+		if d.Path == "github.com/fkwhite/quic-goV2.0" {
 			quicGoVersion = d.Version
 			if d.Replace != nil {
 				if len(d.Replace.Version) > 0 {

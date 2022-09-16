@@ -8,7 +8,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	protocol "github.com/fkwhite/quic-go/internal/protocol"
+	protocol "github.com/fkwhite/quic-goV2.0/internal/protocol"
 )
 
 // MockSentPacketTracker is a mock of SentPacketTracker interface.

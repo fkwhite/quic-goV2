@@ -3,8 +3,8 @@ package congestion
 import (
 	"time"
 
-	"github.com/fkwhite/quic-go/internal/protocol"
-	"github.com/fkwhite/quic-go/internal/utils"
+	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2.0/internal/utils"
 )
 
 // Note(pwestin): the magic clamping numbers come from the original code in

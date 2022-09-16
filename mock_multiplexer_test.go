@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	logging "github.com/fkwhite/quic-go/logging"
+	logging "github.com/fkwhite/quic-goV2.0/logging"
 )
 
 // MockMultiplexer is a mock of Multiplexer interface.

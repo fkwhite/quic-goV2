@@ -10,9 +10,9 @@ import (
 	time "time"
 
 	gomock "github.com/golang/mock/gomock"
-	ackhandler "github.com/fkwhite/quic-go/internal/ackhandler"
-	protocol "github.com/fkwhite/quic-go/internal/protocol"
-	wire "github.com/fkwhite/quic-go/internal/wire"
+	ackhandler "github.com/fkwhite/quic-goV2.0/internal/ackhandler"
+	protocol "github.com/fkwhite/quic-goV2.0/internal/protocol"
+	wire "github.com/fkwhite/quic-goV2.0/internal/wire"
 )
 
 // MockStreamI is a mock of StreamI interface.

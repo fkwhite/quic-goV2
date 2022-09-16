@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/fkwhite/quic-go"
-	"github.com/fkwhite/quic-go/http3"
-	"github.com/fkwhite/quic-go/interop/http09"
-	"github.com/fkwhite/quic-go/interop/utils"
-	"github.com/fkwhite/quic-go/qlog"
+	"github.com/fkwhite/quic-goV2.0"
+	"github.com/fkwhite/quic-goV2.0/http3"
+	"github.com/fkwhite/quic-goV2.0/interop/http09"
+	"github.com/fkwhite/quic-goV2.0/interop/utils"
+	"github.com/fkwhite/quic-goV2.0/qlog"
 )
 
 var tlsConf *tls.Config
@@ -64,7 +64,7 @@ func main() {
 		tlsConf.CipherSuites = []uint16{tls.TLS_CHACHA20_POLY1305_SHA256}
 		err = runHTTP09Server(quicConf)
 	case "retry":
-		// By default, quic-go performs a Retry on every incoming connection.
+		// By default, quic-goV2.0 performs a Retry on every incoming connection.
 		quicConf.AcceptToken = nil
 		err = runHTTP09Server(quicConf)
 	case "http3":
