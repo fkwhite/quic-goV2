@@ -1,7 +1,7 @@
 package logging
 
 import (
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
 )
 
 // PacketTypeFromHeader determines the packet type from a *wire.Header.

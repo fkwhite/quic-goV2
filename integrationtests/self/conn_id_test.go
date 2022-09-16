@@ -7,8 +7,8 @@ import (
 	"math/rand"
 	"net"
 
-	quic "github.com/fkwhite/quic-goV2.0"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	quic "github.com/fkwhite/quic-goV2"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

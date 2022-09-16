@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/crypto/hkdf"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/qtls"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/qtls"
 )
 
 var (

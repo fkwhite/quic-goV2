@@ -1,4 +1,4 @@
-// Package logging defines a logging interface for quic-goV2.0.
+// Package logging defines a logging interface for quic-goV2.
 // This package should not be considered stable
 package logging
 
@@ -7,11 +7,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/utils"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/qerr"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/qerr"
+	"github.com/fkwhite/quic-goV2/internal/wire"
 )
 
 type (

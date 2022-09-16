@@ -4,13 +4,13 @@ import (
 	"crypto/tls"
 	"log"
 
-	fuzzhandshake "github.com/fkwhite/quic-goV2.0/fuzzing/handshake"
-	"github.com/fkwhite/quic-goV2.0/fuzzing/internal/helper"
-	"github.com/fkwhite/quic-goV2.0/internal/handshake"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/testdata"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	fuzzhandshake "github.com/fkwhite/quic-goV2/fuzzing/handshake"
+	"github.com/fkwhite/quic-goV2/fuzzing/internal/helper"
+	"github.com/fkwhite/quic-goV2/internal/handshake"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/testdata"
+	"github.com/fkwhite/quic-goV2/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/wire"
 )
 
 type chunk struct {

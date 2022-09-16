@@ -1,8 +1,8 @@
 package ackhandler
 
 import (
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/utils"
 )
 
 type packetNumberGenerator interface {

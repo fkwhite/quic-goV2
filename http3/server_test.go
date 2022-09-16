@@ -11,12 +11,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0"
-	mockquic "github.com/fkwhite/quic-goV2.0/internal/mocks/quic"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/testdata"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
-	"github.com/fkwhite/quic-goV2.0/quicvarint"
+	"github.com/fkwhite/quic-goV2"
+	mockquic "github.com/fkwhite/quic-goV2/internal/mocks/quic"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/testdata"
+	"github.com/fkwhite/quic-goV2/internal/utils"
+	"github.com/fkwhite/quic-goV2/quicvarint"
 
 	"github.com/golang/mock/gomock"
 	"github.com/marten-seemann/qpack"

@@ -8,7 +8,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	handshake "github.com/fkwhite/quic-goV2.0/internal/handshake"
+	handshake "github.com/fkwhite/quic-goV2/internal/handshake"
 )
 
 // MockSealingManager is a mock of SealingManager interface.

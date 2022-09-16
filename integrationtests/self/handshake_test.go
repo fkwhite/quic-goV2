@@ -9,10 +9,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0"
-	"github.com/fkwhite/quic-goV2.0/integrationtests/tools/israce"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/logging"
+	"github.com/fkwhite/quic-goV2"
+	"github.com/fkwhite/quic-goV2/integrationtests/tools/israce"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/logging"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

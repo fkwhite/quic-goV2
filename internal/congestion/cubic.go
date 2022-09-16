@@ -4,8 +4,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/utils"
 )
 
 // This cubic implementation is based on the one found in Chromiums's QUIC

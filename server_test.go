@@ -14,14 +14,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/handshake"
-	mocklogging "github.com/fkwhite/quic-goV2.0/internal/mocks/logging"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/qerr"
-	"github.com/fkwhite/quic-goV2.0/internal/testdata"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
-	"github.com/fkwhite/quic-goV2.0/logging"
+	"github.com/fkwhite/quic-goV2/internal/handshake"
+	mocklogging "github.com/fkwhite/quic-goV2/internal/mocks/logging"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/qerr"
+	"github.com/fkwhite/quic-goV2/internal/testdata"
+	"github.com/fkwhite/quic-goV2/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/wire"
+	"github.com/fkwhite/quic-goV2/logging"
 
 	"github.com/golang/mock/gomock"
 
@@ -32,7 +32,7 @@ import (
 func areServersRunning() bool {
 	var b bytes.Buffer
 	pprof.Lookup("goroutine").WriteTo(&b, 1)
-	return strings.Contains(b.String(), "quic-goV2.0.(*baseServer).run")
+	return strings.Contains(b.String(), "quic-goV2.(*baseServer).run")
 }
 
 var _ = Describe("Server", func() {

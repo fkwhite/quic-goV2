@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/ackhandler"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
-	"github.com/fkwhite/quic-goV2.0/quicvarint"
+	"github.com/fkwhite/quic-goV2/internal/ackhandler"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/wire"
+	"github.com/fkwhite/quic-goV2/quicvarint"
 )
 
 type Configuration struct {

@@ -3,9 +3,9 @@ package wire
 import (
 	"bytes"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/qerr"
-	"github.com/fkwhite/quic-goV2.0/quicvarint"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/qerr"
+	"github.com/fkwhite/quic-goV2/quicvarint"
 )
 
 // A StopSendingFrame is a STOP_SENDING frame

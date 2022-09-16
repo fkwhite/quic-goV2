@@ -13,7 +13,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fkwhite/quic-goV2.0"
+	"github.com/fkwhite/quic-goV2"
 )
 
 const h09alpn = "hq-interop"

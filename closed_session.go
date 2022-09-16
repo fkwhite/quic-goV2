@@ -3,8 +3,8 @@ package quic
 import (
 	"sync"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/utils"
 )
 
 // A closedLocalSession is a session that we closed locally.

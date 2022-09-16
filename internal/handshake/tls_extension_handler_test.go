@@ -3,8 +3,8 @@ package handshake
 import (
 	"fmt"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/qtls"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/qtls"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

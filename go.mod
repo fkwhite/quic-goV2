@@ -1,4 +1,4 @@
-module github.com/fkwhite/quic-goV2.0
+module github.com/fkwhite/quic-goV2
 
 go 1.19
 

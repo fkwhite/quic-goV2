@@ -48,7 +48,7 @@ func WriteCorpusFileWithPrefix(path string, data []byte, n int) error {
 func GenerateCertificate(priv crypto.Signer) (*tls.Certificate, *x509.CertPool, error) {
 	template := x509.Certificate{
 		SerialNumber:          big.NewInt(1),
-		Subject:               pkix.Name{Organization: []string{"quic-goV2.0 fuzzer"}},
+		Subject:               pkix.Name{Organization: []string{"quic-goV2 fuzzer"}},
 		NotBefore:             time.Now().Add(-24 * time.Hour),
 		NotAfter:              time.Now().Add(30 * 24 * time.Hour),
 		KeyUsage:              x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature,

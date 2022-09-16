@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/quicvarint"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/quicvarint"
 )
 
 // A NewConnectionIDFrame is a NEW_CONNECTION_ID frame

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/handshake"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2/internal/handshake"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/wire"
 )
 
 type headerDecryptor interface {

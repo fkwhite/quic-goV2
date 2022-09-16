@@ -1,6 +1,6 @@
 package logging
 
-import "github.com/fkwhite/quic-goV2.0/internal/wire"
+import "github.com/fkwhite/quic-goV2/internal/wire"
 
 // A Frame is a QUIC frame
 type Frame interface{}

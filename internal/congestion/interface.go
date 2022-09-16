@@ -3,7 +3,7 @@ package congestion
 import (
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
 )
 
 // A SendAlgorithm performs congestion control

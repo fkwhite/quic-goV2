@@ -12,11 +12,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0"
-	quicproxy "github.com/fkwhite/quic-goV2.0/integrationtests/tools/proxy"
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/testutils"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2"
+	quicproxy "github.com/fkwhite/quic-goV2/integrationtests/tools/proxy"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/testutils"
+	"github.com/fkwhite/quic-goV2/internal/wire"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	quic "github.com/fkwhite/quic-goV2.0"
+	quic "github.com/fkwhite/quic-goV2"
 
 	"golang.org/x/net/http/httpguts"
 )

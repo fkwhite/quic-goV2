@@ -3,9 +3,9 @@ package ackhandler
 import (
 	"time"
 
-	"github.com/fkwhite/quic-goV2.0/internal/protocol"
-	"github.com/fkwhite/quic-goV2.0/internal/utils"
-	"github.com/fkwhite/quic-goV2.0/internal/wire"
+	"github.com/fkwhite/quic-goV2/internal/protocol"
+	"github.com/fkwhite/quic-goV2/internal/utils"
+	"github.com/fkwhite/quic-goV2/internal/wire"
 )
 
 // number of ack-eliciting packets received before sending an ack.
