@@ -651,7 +651,7 @@ func (p *packetPacker) composeNextPacket(maxFrameSize protocol.ByteCount, ackAll
 		payload.frames, lengthAdded = p.framer.AppendControlFrames(payload.frames, maxFrameSize-payload.length)
 		payload.length += lengthAdded
 
-		AppendStreamFrames_Scheduler := "Proposal"
+		AppendStreamFrames_Scheduler := "RR"
 		switch AppendStreamFrames_Scheduler {
 		case "RR":
 			payload.frames, lengthAdded = p.framer.AppendStreamFrames(payload.frames, maxFrameSize-payload.length)
