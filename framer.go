@@ -15,6 +15,11 @@ import (
 	"github.com/fkwhite/quic-goV2/quicvarint"
 )
 
+type Configuration struct {
+	Scheduler_name string
+	Weight  []float64
+	Penalty []float64
+}
 
 type framer interface {
 	HasData() bool

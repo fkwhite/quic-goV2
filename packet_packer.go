@@ -6,6 +6,10 @@ import (
 	"fmt"
 	"net"
 	"time"
+	"encoding/json"
+	"os"
+	
+	
 
 	"github.com/fkwhite/quic-goV2/internal/ackhandler"
 	"github.com/fkwhite/quic-goV2/internal/handshake"
@@ -14,13 +18,6 @@ import (
 	"github.com/fkwhite/quic-goV2/internal/utils"
 	"github.com/fkwhite/quic-goV2/internal/wire"
 )
-
-
-type Configuration struct {
-	Scheduler_name string
-	Weight  []float64
-	Penalty []float64
-}
 
 
 type packer interface {
@@ -658,8 +655,21 @@ func (p *packetPacker) composeNextPacket(maxFrameSize protocol.ByteCount, ackAll
 		var lengthAdded protocol.ByteCount
 		payload.frames, lengthAdded = p.framer.AppendControlFrames(payload.frames, maxFrameSize-payload.length)
 		payload.length += lengthAdded
+		configFile := "conf_Scheduler.json"
+		file, err := os.Open(configFile)
+		if err != nil {
+			fmt.Println("An error has ocurred -- Opening configuration file")
+			panic(err)
+		}
+		defer file.Close()
+		decoder := json.NewDecoder(file)
+		configuration := Configuration{}
+		err = decoder.Decode(&configuration)
+		if err != nil {
+			fmt.Println("error:", err)
+		}
 
-		Println(configuration.Scheduler_name)
+		fmt.Println(string(configuration.Scheduler_name))
 		AppendStreamFrames_Scheduler := configuration.Scheduler_name
 		switch AppendStreamFrames_Scheduler {
 		case "RR":
