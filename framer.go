@@ -16,6 +16,7 @@ import (
 )
 
 type Configuration struct {
+	Scheduler_name string
 	Weight  []float64
 	Penalty []float64
 }
