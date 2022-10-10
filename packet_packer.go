@@ -19,7 +19,6 @@ import (
 	"github.com/fkwhite/quic-goV2/internal/wire"
 )
 
-
 type packer interface {
 	PackCoalescedPacket() (*coalescedPacket, error)
 	PackPacket() (*packedPacket, error)
@@ -655,6 +654,8 @@ func (p *packetPacker) composeNextPacket(maxFrameSize protocol.ByteCount, ackAll
 		var lengthAdded protocol.ByteCount
 		payload.frames, lengthAdded = p.framer.AppendControlFrames(payload.frames, maxFrameSize-payload.length)
 		payload.length += lengthAdded
+
+		
 		configFile := "conf_Scheduler.json"
 		file, err := os.Open(configFile)
 		if err != nil {
@@ -669,9 +670,9 @@ func (p *packetPacker) composeNextPacket(maxFrameSize protocol.ByteCount, ackAll
 			fmt.Println("error:", err)
 		}
 
-		fmt.Println(string(configuration.Scheduler_name))
-		AppendStreamFrames_Scheduler := configuration.Scheduler_name
-		switch AppendStreamFrames_Scheduler {
+		
+		
+		switch configuration.Scheduler_name {
 		case "RR":
 			payload.frames, lengthAdded = p.framer.AppendStreamFrames(payload.frames, maxFrameSize-payload.length)
 		case "FQ":
